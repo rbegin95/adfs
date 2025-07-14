@@ -9,3 +9,5 @@ Add-AdfsClaimDescription `
 
 
 Add-AdfsClaimDescription -Name "name" -ClaimType "name" -IsAccepted $true -IsOffered $true
+
+Get-AdfsClaimDescription | where {$_.Name -eq "name"}
