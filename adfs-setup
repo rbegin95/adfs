@@ -1,0 +1,8 @@
+Add-AdfsClaimDescription `
+    -Name "name” `
+    -ClaimType "name" `
+    -IsAccepted $true `
+    -IsOffered $true `
+    -Description "User's display name" `
+    -ShortName "name" `
+    -AssociatedParameter "profile"
