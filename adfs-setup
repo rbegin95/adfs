@@ -11,3 +11,5 @@ Add-AdfsClaimDescription `
 Add-AdfsClaimDescription -Name "name" -ClaimType "name" -IsAccepted $true -IsOffered $true
 
 Get-AdfsClaimDescription | where {$_.Name -eq "name"}
+
+c:[Type == ".*"] => issue(claim = c), issue(Type = "https://schemas.xmlsoap.org/ws/2005/05/identity/claims/name", Value = "Richard IT Test");
